@@ -8,9 +8,6 @@ downloads = [
 'http://downloads.sourceforge.net/keepass/KeePass-2.28-Russian.zip'
 ]
 
-
-#target_dir = "keepass"
-
 target_dir = os.path.join(os.path.dirname(__file__), 'keepass')
 
 for url in downloads:

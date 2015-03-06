@@ -1,4 +1,4 @@
-import urllib, zipfile, os
+import urllib.request, zipfile, os
 import sys
 import time
  
@@ -23,7 +23,7 @@ def reporthook(count, block_size, total_size):
 
 def save(url, filename):
     print("download %s to %s" % (url, filename))
-    urllib.urlretrieve(url, filename, reporthook)
+    urllib.request.urlretrieve(url, filename, reporthook)
     print("")
 
 def save_to_dir(url, dirname):
